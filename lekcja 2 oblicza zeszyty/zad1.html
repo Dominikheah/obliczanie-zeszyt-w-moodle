@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="zad1.js"></script>
+</head>
+
+<body>
+    <h1>Kalkulator zeszytów</h1>
+    <form id="formularz">
+        <p for="sztuki">ilosc sztuk:</p>
+        <input id="sztuki" name="sztuki" type="number" min="1" max="20" step="1" value="1" />
+        <p for="rozmiar">rozmiar:</p>
+        <select id="rozmiar">
+            <option value="M">M</option>
+            <option value="S">S</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+         <p for="odbior">odbiór:</p>
+        <select id="odbior">
+            <option value="odbior osobisty">odbiór osobisty</option>
+            <option value="wysyłka">wysyłka</option>
+        </select>
+        <p>Dodatki:</p>
+           <p>nadruk <input type="checkbox"></p>
+           <p>opakowanie <input type="checkbox"></p>
+    </form>
+</body>
+
+</html>

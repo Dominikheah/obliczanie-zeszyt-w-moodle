@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kalkulator zeszytów</title>
+  <script src="js.js" defer></script>
+</head>
+<body>
+  <h1>Kalkulator zeszytów</h1>
+  <form id="formularz">
+    <p>
+      <label for="sztuki">Liczba zeszytów</label>
+      <input id="sztuki" name="sztuki" type="number"
+             min="1" max="20" step="1" value="1" required>
+    </p>
+    <p>
+      <label><input id="okladka" name="okladka" type="checkbox">
+        Okładka za 2 zł na zeszyt</label>
+    </p>
+    <button type="submit">Podsumuj</button>
+    <button type="reset">Przywróć ustawienia</button>
+  </form>
+  <p id="koszt"></p>
+  <p id="wynik" aria-live="polite"></p>
+</body>
+</html>
